@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Cross Browser Testing">
+    <parameter name="URL" value="https://testautomationu.applitools.com/"/>
+
+    <!--<test name="Test on Internet Explorer">
+        <parameter name="BrowserType" value="Internet Explorer"/>
+        <classes>
+            <class name="LoginTests"/>
+        </classes>
+    </test>-->
+
+    <test name="Test on Chrome">
+        <parameter name="BrowserType" value="Chrome"/>
+        <classes>
+            <!--<class name="LoginTests"/>-->
+            <class name="NewTests"/>
+        </classes>
+    </test>
+
+
+    <test name="Test on Firefox">
+        <parameter name="BrowserType" value="Firefox"/>
+        <classes>
+            <!--<class name="LoginTests"/>-->
+            <class name="NewTests"/>
+        </classes>
+    </test>
+
+
+
+</suite>
